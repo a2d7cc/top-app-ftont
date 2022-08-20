@@ -1,0 +1,64 @@
+.reviewForm {
+	font-size: 14px;
+	line-height: 24px;
+
+	display: grid;
+	grid-template-columns: [start] auto 1fr auto [end];
+	gap: 20px 30px;
+	align-items: center;
+}
+
+.description, .submit {
+	grid-column: start / end;
+}
+
+.title {
+	justify-self: left;
+}
+
+.info {
+	margin-left: 15px;
+}
+
+.rating {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 20px;
+}
+
+.success {
+	background: var(--green-light);
+	padding: 20px;
+	position: relative;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+
+.error {
+	background: var(--red-light);
+	padding: 20px;
+	position: relative;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.error path {
+	stroke: var(--red);
+}
+
+.successTitle {
+	font-weight: bold;
+}
+
+.errorMessage {
+	font-weight: bold;
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
